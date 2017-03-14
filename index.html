@@ -1,111 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
 
 		<div class="contenedor">
       <div class="titulo">
-        <h1>Cruise</h1>
-  			<a href="javascript:mostrarPestana(0);" class="cabecera c-activa" >DASHBOARD</a>
-        <a href="#" class="cabecera" onclick="mostrarPestana(1);">MY CRUISE</a>
-        <a href="#" class="cabecera" onclick="mostrarPestana(2);">AGENTS</a>
-        <a href="#" class="cabecera" onclick="mostrarPestana(3);">HELP</a>
+        <div class="titulo-encabezado">
+          <h1>Cruise</h1>
+        </div>
+          <a href="javascript:mostrarPestana(0);" class="cabecera" >DASHBOARD</a>
+          <a href="javascript:mostrarPestana(1);" class="cabecera">MY CRUISE</a>
+          <a href="javascript:mostrarPestana(2);" class="cabecera c-activa">AGENTS</a>
+          <a href="javascript:mostrarPestana(3);" class="cabecera">HELP</a>
       </div>
+			<div class="pestana">
+				  <p>DASHBBOARD</p>
+			</div>
+			<div class="pestana">
+          <p>MY CRUISE</p>
+			</div>
 			<div class="pestana p-activa">
-				<p>
-            DASHBBOARD
-				</p>
-			</div>
-
-			<div class="pestana">
-        <p>
-            MY CRUISE
-        </p>
-			</div>
-
-			<div class="pestana">
-        <div id="barra-agents">
-          <input type="button" value="All">
-          <input type="button" value="Physical">
-          <input type="button" value="Virtual">
-        </div>
-        <div id="contenido">
-
-          <div class="cuadros1">
-              <div class="circulo">
-              <p>bjstdmngbgr02.thoughtworks.com  idle | 192.168.1.2 | var/lib/cruise/agent</p>
-              <p>bjstdmngbgr02.thoughtworks.com  idle | 192.168.1.2 | var/lib/cruise/agent</p>
-
+          <div id="barra">
+              <div id="barra-texto">
+                Agents
+                <input type="button" value="All" class="botones-barra">
+                <input type="button" value="Physical" class="botones-barra">
+                <input type="button" value="Virtual" class="botones-barra">
+              </div>
           </div>
-        </div>
-        <div id="menu">
-            SUMMARY Y HISTORY
-        </div>
-			</div>
+          <div id="contenido">
+              <div class="cuadro1">
+                  <div class="circulo"></div>
+                  <div class="cuadro-texto">
+                    <span>bjstdmngbgr02.thoughtworks.com     idle |  192.168.1.2  |  var/lib/cruise/agent</span>
 
+                    <div class="cssToolTip">
+                      <a href="#">  + Specify Resources </a>
+                            <span> (Separate multiple resources name with commas) </br><input type="text"> </br>
+                            <button type="button" name="button">Add resources</button>
+                            <button type="button" name="button">Close</button>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="menu">
+            <p>SUMMARY Y HISTORY</p>
+          </div>
+			</div>
 			<div class="pestana">
-				<p>
-          HELP
-				</p>
+				  <p>HELP</p>
 			</div>
 		</div>
-      <script src="assets/js/main.js"></script>
-    </body>
-
-    </html>
-<!--asfsf>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
-</head>
-<body>
-
-  <div id="contenedor">
-      <div id="cabecera">
-        <div id="pestanas">
-          <ul id=lista>
-              <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>DASHBOARD</a></li>
-              <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>MYCRUISE</a></li>
-              <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>AGENTS</a></li>
-              <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>HELP</a></li>
-          </ul>
-        </div>
-      </div>
-      <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
-
-      <div id="contenidopestanas">
-              <div id="cpestana1">
-                  Contenido de la pestaña 1
-                  <div id="contenido">
-                        contenido
-                  </div>
-                  <div id="menu">
-                       menu ddd
-                  </div>
-              </div>
-              <div id="cpestana2">
-                  Contenido de la pestaña 2
-                  <div id="contenido">
-                        contenido
-                  </div>
-                  <div id="menu">
-                       menu ddd
-                  </div>
-              </div>
-      </div>
-  </div>
-
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-<!-->
