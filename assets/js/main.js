@@ -11,3 +11,11 @@ function mostrarPestana(n){
 		pestanas[n].className += " p-activa";
 		cabecera[n].className += " c-activa";
 	}
+function mostrarVentana(){
+			var ventana = document.getElementsByClassName("cssToolTip");
+			ventana[0].style.display = "block";
+}
+function cerrar(){
+			var ventana = document.getElementsByClassName("cssToolTip");
+			ventana[0].style.display = "none";
+}
